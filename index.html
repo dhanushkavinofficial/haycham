@@ -1,0 +1,1258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AppleStyle Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+</head>
+
+<body>
+    <header class="sticky-top">
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <div class="col-md-3">
+                    <div class="logo">
+                        <i class=""></i> Dhanush kavin G
+                    </div>
+                </div>
+                <div class="col-md-9">
+                    <nav class="d-flex align-items-center justify-content-end">
+                        <div class="nav-links d-none d-lg-flex">
+                            <a onclick="navigate('home')" class="nav-item active">Home</a>
+                            <a onclick="navigate('about')" class="nav-item">About</a>
+                            <a onclick="navigate('skills')" class="nav-item">Skills</a>
+                            <a onclick="navigate('projects')" class="nav-item">Projects</a>
+                            <a onclick="navigate('certificates')" class="nav-item">Certificates</a>
+                            <a onclick="navigate('experience')" class="nav-item">Experience</a>
+                            <a onclick="navigate('articles')" class="nav-item">Articles</a>
+                            <a onclick="navigate('contact')" class="nav-item">Contact</a>
+                        </div>
+                        <div class="mobile-menu d-lg-none">
+                            <i class="fas fa-bars" onclick="toggleMobileMenu()"></i>
+                        </div>
+                        <i class="fas fa-adjust toggle-btn ms-3" onclick="toggleMode()" title="Toggle Mode"></i>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="mobile-nav d-lg-none" id="mobileNav">
+            <div class="container">
+                <div class="mobile-nav-links">
+                    <a onclick="navigate('home'); toggleMobileMenu()">Home</a>
+                    <a onclick="navigate('about'); toggleMobileMenu()">About</a>
+                    <a onclick="navigate('skills'); toggleMobileMenu()">Skills</a>
+                    <a onclick="navigate('projects'); toggleMobileMenu()">Projects</a>
+                    <a onclick="navigate('certificates'); toggleMobileMenu()">Certificates</a>
+                    <a onclick="navigate('experience'); toggleMobileMenu()">Experience</a>
+                    <a onclick="navigate('articles'); toggleMobileMenu()">Articles</a>
+                    <a onclick="navigate('contact'); toggleMobileMenu()">Contact</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main id="content">
+        <!-- HOME SECTION - Full Screen Hero Layout -->
+        <section id="home" class="section active home-layout">
+            <div class="hero-container">
+                <div class="hero-background">
+                    <div class="floating-elements">
+                        <div class="float-element"></div>
+                        <div class="float-element"></div>
+                        <div class="float-element"></div>
+                    </div>
+                </div>
+                <div class="hero-content-wrapper">
+                    <div class="hero-text">
+                        <h1 class="hero-title">
+                            <span class="title-line">Software</span>
+                            <span class="title-line">Full-Stack</span>
+                            <span class="title-line highlight">Developer/Engineer</span>
+                        </h1>
+                        <p class="hero-description">Crafting exceptional digital experiences with modern technologies
+                            and clean, efficient code.</p>
+                        <div class="hero-stats">
+                            <div class="stat-item">
+                                <span class="stat-number">10+</span>
+                                <span class="stat-label">Projects</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">4+</span>
+                                <span class="stat-label">months</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number"></span>
+                                <span class="stat-label"></span>
+                            </div>
+                        </div>
+                        <div class="hero-actions">
+                            <button class="btn-primary-custom" onclick="navigate('projects')">
+                                <span>View My Work</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </button>
+                            <button class="btn-secondary-custom" onclick="navigate('contact')">
+                                <span>Let's Talk</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="hero-visual">
+                        <div class="code-preview">
+                            <div class="code-header">
+                                <div class="code-dots">
+                                    <span></span><span></span><span></span>
+                                </div>
+                                <span class="code-title">portfolio.js</span>
+                            </div>
+                            <div class="code-content">
+                                <div class="code-line"><span class="keyword">const</span> <span
+                                        class="variable">developer</span> = {</div>
+                                <div class="code-line"> <span class="property">name</span>: <span
+                                        class="string">'Full-Stack Dev'-dk</span>,</div>
+                                <div class="code-line"> <span class="property">skills</span>: [<span
+                                        class="string">'React'</span>, <span class="string">'Node.js'</span>],</div>
+                                <div class="code-line"> <span class="property">passion</span>: <span
+                                        class="string">'Creating Amazing UX'</span></div>
+                                <div class="code-line">};</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="scroll-indicator">
+                    <div class="scroll-text">Scroll to explore</div>
+                    <div class="scroll-arrow"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ABOUT SECTION - Split Screen Layout -->
+        <section id="about" class="section about-layout">
+            <div class="about-container">
+                <div class="about-left">
+                    <div class="about-image-wrapper">
+                        <div class="about-image">
+                            <div class="profile-placeholder">
+                                <img src="https://i.pinimg.com/736x/54/80/62/548062cfdcef7e5bb8742754f4440173.jpg"
+                                    height="309" width="300" style="border-radius: 200px;">
+                                <i class="fas fa-user"></i>
+                            </div>
+                        </div>
+                        <div class="about-decorations">
+                            <div class="decoration-circle"></div>
+                            <div class="decoration-square"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-right">
+                    <div class="about-content">
+                        <div class="section-badge">About Me</div>
+                        <h2 class="about-title">Passionate Developer with a Vision for Excellence</h2>
+                        <p class="about-description">I'm a dedicated full-stack developer who believes in the power of
+                            clean code and exceptional user experiences. With expertise spanning both frontend and
+                            backend technologies, I create digital solutions that not only look great but perform
+                            flawlessly.</p>
+
+                        <div class="about-highlights">
+                            <div class="highlight-item">
+                                <div class="highlight-icon">
+                                    <i class="fas fa-lightbulb"></i>
+                                </div>
+                                <div class="highlight-content">
+                                    <h4>Innovation First</h4>
+                                    <p>Always exploring cutting-edge technologies and methodologies</p>
+                                </div>
+                            </div>
+                            <div class="highlight-item">
+                                <div class="highlight-icon">
+                                    <i class="fas fa-users"></i>
+                                </div>
+                                <div class="highlight-content">
+                                    <h4>Collaborative Spirit</h4>
+                                    <p>Strong believer in teamwork and knowledge sharing</p>
+                                </div>
+                            </div>
+                            <div class="highlight-item">
+                                <div class="highlight-icon">
+                                    <i class="fas fa-target"></i>
+                                </div>
+                                <div class="highlight-content">
+                                    <h4>Results Driven</h4>
+                                    <p>Focused on delivering measurable business value</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="about-actions">
+                            <button class="btn-primary-custom" onclick="navigate('contact')">
+                                <span>Get In Touch</span>
+                            </button>
+                            <a href="#" class="download-cv">
+                                <i class="fas fa-download"></i>
+                                <span>Download CV</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SKILLS SECTION - Interactive Dashboard Layout -->
+        <section id="skills" class="section skills-layout">
+            <div class="skills-container">
+                <div class="skills-header">
+                    <div class="section-badge">Technical Expertise</div>
+                    <h2 class="skills-title">Skills & Technologies</h2>
+                    <p class="skills-subtitle">A comprehensive overview of my technical capabilities and expertise</p>
+                </div>
+
+                <div class="skills-dashboard">
+                    <div class="skills-sidebar">
+                        <div class="skill-categories">
+                            <div class="category-item active" data-category="frontend">
+                                <i class="fas fa-paint-brush" style="margin-right: 6px;"></i>
+                                <span>Frontend</span>
+                            </div>
+                            <div class="category-item" data-category="backend">
+                                <i class="fas fa-server" style="margin-right: 6px;"></i>
+                                <span>Backend</span>
+                            </div>
+                            <div class="category-item" data-category="database">
+                                <i class="fas fa-database" style="margin-right: 6px;"></i>
+                                <span>Database</span>
+                            </div>
+                            <div class="category-item" data-category="devtools">
+                                <i class="fas fa-tools" style="margin-right: 6px;"></i>
+                                <span>Dev Tools</span>
+                            </div>
+                            <div class="category-item" data-category="devops">
+                                <i class="fas fa-cloud" style="margin-right: 6px;"></i>
+                                <span>DevOps</span>
+                            </div>
+                            <div class="category-item" data-category="testing">
+                                <i class="fas fa-check-circle" style="margin-right: 6px;"></i>
+                                <span>Testing</span>
+                            </div>
+                            <div class="category-item" data-category="sdlc">
+                                <i class="fas fa-project-diagram" style="margin-right: 6px;"></i>
+                                <span>SDLC</span>
+                            </div>
+                            <div class="category-item" data-category="math">
+                                <i class="fas fa-calculator" style="margin-right: 6px;"></i>
+                                <span>Mathematical</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skills-content">
+
+                        <!-- Frontend -->
+                        <div class="skill-group active" data-group="frontend">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <i class="fab fa-html5" style="margin-right:8px; color:#e44d26;"></i>
+                                    <span class="skill-name">HTML5</span>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <i class="fab fa-css3-alt" style="margin-right:8px; color:#1572b6;"></i>
+                                    <span class="skill-name">CSS3</span>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <i class="fab fa-js" style="margin-right:8px; color:#f7df1e;"></i>
+                                    <span class="skill-name">JavaScript/ES6+</span>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <i class="fab fa-bootstrap" style="margin-right:8px; color:#7952b3;"></i>
+                                    <span class="skill-name">Bootstrap</span>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <i class="fa-brands fa-angular" style="margin-right:8px; color:#42b883;"></i>
+                                    <span class="skill-name">Angular</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Backend -->
+                        <div class="skill-group" data-group="backend">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <i class="fab fa-node-js" style="margin-right:8px; color:#68a063;"></i>
+                                    <span class="skill-name">Node.js</span>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <i class="fab fa-java" style="margin-right:8px; color:#ed8b00;"></i>
+                                    <span class="skill-name">Java</span>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <i class="fas fa-leaf" style="margin-right:8px; color:#6db33f;"></i>
+                                    <span class="skill-name">Spring Boot</span>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <i class="fab fa-python" style="margin-right:8px; color:#306998;"></i>
+                                    <span class="skill-name">Python</span>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <i class="fas fa-cloud" style="margin-right:8px; color:#4aa1f3;"></i>
+                                    <span class="skill-name">REST APIs</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Database -->
+                        <div class="skill-group" data-group="database">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <i class="fas fa-database" style="margin-right:8px; color:#00758f;"></i>
+                                    <span class="skill-name">MySQL</span>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <i class="fas fa-leaf" style="margin-right:8px; color:#4DB33D;"></i>
+                                    <span class="skill-name">MongoDB</span>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <i class="" style="margin-right:8px; color:#336791;"></i>
+                                    <span class="skill-name"></span>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <i class="" style="margin-right:8px; color:#ff2d20;"></i>
+                                    <span class="skill-name"></span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Dev Tools -->
+                        <div class="skill-group" data-group="devtools">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <i class="fab fa-github" style="margin-right:8px; color:#333;"></i>
+                                    <span class="skill-name">Git & GitHub</span>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <i class="fas fa-code" style="margin-right:8px; color:#007acc;"></i>
+                                    <span class="skill-name">VS Code</span>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <i class="fab fa-npm" style="margin-right:8px; color:#cb3837;"></i>
+                                    <span class="skill-name">npm</span>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <i class="fas fa-file-code" style="margin-right:8px; color:#ff6c37;"></i>
+                                    <span class="skill-name">Postman</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- DevOps -->
+                        <div class="skill-group" data-group="devops">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <i class="fab fa-docker" style="margin-right:8px; color:#0db7ed;"></i>
+                                    <span class="skill-name">Docker</span>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <i class="fab fa-aws" style="margin-right:8px; color:#ff9900;"></i>
+                                    <span class="skill-name">AWS</span>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <i class="fas fa-infinity" style="margin-right:8px; color:#326ce5;"></i>
+                                    <span class="skill-name">CI/CD</span>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <i class="fab fa-linux" style="margin-right:8px; color:#fcc624;"></i>
+                                    <span class="skill-name">Linux</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Testing -->
+                        <div class="skill-group" data-group="testing">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <i class="fas fa-vial" style="margin-right:8px; color:#944058;"></i>
+                                    <span class="skill-name">Jest</span>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <i class="fas fa-bug" style="margin-right:8px; color:#17a2b8;"></i>
+                                    <span class="skill-name">Unit Testing</span>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <i class="fas fa-check-double" style="margin-right:8px; color:#28a745;"></i>
+                                    <span class="skill-name">Integration Testing</span>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <i class="fas fa-robot" style="margin-right:8px; color:#6c757d;"></i>
+                                    <span class="skill-name">Automated Testing</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- SDLC -->
+                        <div class="skill-group" data-group="sdlc">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <i class="fas fa-tasks" style="margin-right:8px; color:#0052cc;"></i>
+                                    <span class="skill-name">Agile/Scrum</span>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <i class="fas fa-project-diagram" style="margin-right:8px; color:#28a745;"></i>
+                                    <span class="skill-name">Project Management</span>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <i class="fas fa-code-branch" style="margin-right:8px; color:#333;"></i>
+                                    <span class="skill-name">Version Control</span>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <i class="fas fa-clipboard-list" style="margin-right:8px; color:#6f42c1;"></i>
+                                    <span class="skill-name">Requirements Analysis</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Mathematical -->
+                        <div class="skill-group" data-group="math">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <i class="fas fa-calculator" style="margin-right:8px; color:#007acc;"></i>
+                                    <span class="skill-name">Data Structures & Algorithms</span>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <i class="fas fa-calculator" style="margin-right:8px; color:#007acc;"></i>
+                                    <span class="skill-name">Discrete Mathematics</span>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <i class="fas fa-calculator" style="margin-right:8px; color:#007acc;"></i>
+                                    <span class="skill-name">Problem Solving</span>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <i class="fas fa-calculator" style="margin-right:8px; color:#007acc;"></i>
+                                    <span class="skill-name">Statistical Analysis</span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROJECTS SECTION - Portfolio Grid Layout -->
+        <section id="projects" class="section projects-layout">
+            <div class="projects-container">
+                <div class="projects-header">
+                    <div class="section-badge">Portfolio</div>
+                    <h2 class="projects-title">Featured Projects</h2>
+                    <div class="project-filters">
+                        <button class="filter-btn active" data-filter="all">All Projects</button>
+                        <button class="filter-btn" data-filter="web">Web Apps</button>
+                        <button class="filter-btn" data-filter="mobile">Mobile</button>
+                        <button class="filter-btn" data-filter="api">APIs</button>
+                    </div>
+                </div>
+
+                <div class="projects-grid">
+                    <div class="project-card featured" data-category="web">
+                        <div class="project-image">
+                            <div class="">
+                                <div class="project-links">
+                                    <img src="https://i.pinimg.com/736x/85/d5/2c/85d52c7ddfbf966d7361084256daf436.jpg"
+                                        alt="Sky line mart" class="w-full h-48 object-cover rounded-lg mb-6 shadow-md">
+                                </div>
+                            </div>
+                            <div class="project-placeholder">
+                                <i class=""></i>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-category">Web Application</div>
+                            <h3 class="project-title">Sky line mart (e-commerce)</h3>
+                            <p class="project-description">Simple e-commerce platform to practice web design and code
+                                interaction.</p>
+                            <div class="project-tech">
+                                <span>HTML/CSS</span>
+                                <span>JSES6+</span>
+                                <span>Bootstarp</span>
+                                <span>Angular</span>
+                                <a href="https://dhanushkavinofficial.github.io/skylinemart/" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i></a>
+                                <a href="https://dhanushkavinofficial.github.io/skylinemart/" class="project-link">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card" data-category="web">
+                        <div class="project-image">
+                            <div class="">
+                                <div class="project-links">
+                                    <img src="https://i.pinimg.com/474x/00/57/cc/0057cc3ac15ea8fb7b41352129121eb2.jpg"
+                                        alt="YouTube Clone" class="w-full h-48 object-cover rounded-lg mb-6 shadow-md">
+
+                                </div>
+                            </div>
+                            <div class="project-placeholder">
+                                <i class="fas fa-graduation-cap"></i>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-category">You-Tube Clone</div>
+                            <h3 class="project-title">A basic YouTube UI clone with live interaction features.</h3>
+                            <p class="project-description"></p>
+                            <div class="project-tech">
+                                <span>HTML/CSS</span>
+                                <span>BOOTSTARP/TAILWIND</span>
+                                <span>JSES6+</span>
+                                <a href="https://dhanushkavinofficial.github.io/YOUtube/" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="https://github.com/dhanushkavinofficial" class="project-link">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card" data-category="api">
+                        <div class="project-image">
+                            <div class="">
+                                <div class="project-links">
+                                    <img src="https://i.pinimg.com/736x/94/9d/28/949d28d90592f3f66fe4c344a48abad2.jpg"
+                                        alt="Google Search Engine"
+                                        class="w-full h-48 object-cover rounded-lg mb-6 shadow-md">
+                                </div>
+                            </div>
+                            <div class="project-placeholder">
+                                <i class="fas fa-users"></i>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-category"> API</div>
+                            <h3 class="project-title">Google Search Engine</h3>
+                            <p class="project-description">A search engine UI to practice frontend logic and usability.
+                            </p>
+                            <div class="project-tech">
+                                <span>Html/css</span>
+                                <span>Bootstarp</span>
+                                <span>JSES6+</span>
+                                <span>Google-API</span>
+                                <a href="https://dhanushkavinofficial.github.io/google/" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="https://github.com/dhanushkavinofficial" class="btn-link" class="project-link">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- . Age Calculator -->
+
+                    <div class="project-card" data-category="web">
+                        <div class="project-image">
+                            <div class="">
+                                <div class="project-links">
+                                    <img src="https://i.pinimg.com/474x/eb/b0/6c/ebb06c81e02cfc7733d81c22428f1e75.jpg"
+                                        alt="Age Calculator" class="w-full h-48 object-cover rounded-lg mb-6 shadow-md">
+                                </div>
+                            </div>
+                            <div class="project-placeholder">
+                                <i class="fas fa-utensils"></i>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-category"></div>
+                            <h3 class="project-title">Age Calculator</h3>
+                            <p class="project-description">Frontend UI and logic to calculate user age with date input..
+                            </p>
+                            <div class="project-tech">
+                                <span>Html/css</span>
+                                <span>Bootstarp</span>
+                                <span>JSES6+</span>
+                                <span>Angular</span>
+                                <a href="https://dhanushkavinofficial.github.io/agecalxe/" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="https://github.com/dhanushkavinofficial" class="project-link">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--DK sucure pass-->
+                    <div class="project-card" data-category="web">
+                        <div class="project-image">
+                            <div class="">
+                                <img src="https://i.pinimg.com/474x/5f/34/2f/5f342f3d80031c8196d4cce3863b6f29.jpg"
+                                    alt="DK-Secure Pass" class="w-full h-48 object-cover rounded-lg mb-6 shadow-md">
+                            </div>
+
+
+                        </div>
+                        <div class="project-content">
+                            <div class="project-category"></div>
+                            <h3 class="project-title">DK-Secure Pass</h3>
+                            <p class="project-description">Secure password generator with export to PDF functionality.
+                            </p>
+                            <div class="project-tech">
+                                <span>Html/css</span>
+                                <span>Bootstarp</span>
+                                <span>JSES6+</span>
+                                <span>Angular</span>
+                                <a href="https://dhanushkavinofficial.github.io/DKsecure/" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="https://github.com/dhanushkavinofficial" class="project-link">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!---->
+                    <div class="project-card" data-category="web">
+                        <div class="project-image">
+                            <div class="">
+                                <div class="project-links">
+                                    <img src="https://i.pinimg.com/474x/29/89/05/29890559373c2222b4ff82279bd6a330.jpg"
+                                        alt="NextGenDepot" class="w-full h-48 object-cover rounded-lg mb-6 shadow-md">
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="project-content">
+                            <div class="project-category"></div>
+                            <h3 class="project-title">NextGenDepot</h3>
+                            <p class="project-description">Enterprise UI development practice with modern frontend
+                                tools.</p>
+                            <div class="project-tech">
+                                <span>Html/css</span>
+                                <span>Bootstarp</span>
+                                <span>JSES6+</span>
+                                <span>Angular</span>
+                                <a href="https://dhanushkavinofficial.github.io/Warehouse/" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="https://github.com/dhanushkavinofficial" class="project-link">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card" data-category="web">
+                        <div class="project-image">
+                            <div class="">
+                                <img src="https://i.pinimg.com/474x/c8/bc/49/c8bc4907863e6f8fdc12e13e24d3587d.jpg"
+                                    alt="Netflix UI" class="w-full h-48 object-cover rounded-lg mb-6 shadow-md">
+                            </div>
+
+
+                        </div>
+                        <div class="project-content">
+                            <div class="project-category"></div>
+                            <h3 class="project-title">Netflix UI Clone</h3>
+                            <p class="project-description">Simple Netflix frontend UI to practice complex layout
+                                building.</p>
+                            <div class="project-tech">
+                                <span>Html/css</span>
+                                <span>Bootstarp</span>
+                                <span>JSES6+</span>
+                                <span></span>
+                                <a href="https://dhanushkavinofficial.github.io/Netflix/" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="https://github.com/dhanushkavinofficial" class="project-link">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card" data-category="web">
+                        <div class="project-image">
+                            <div class="">
+                                <div class="project-links">
+                                    <img src="https://i.pinimg.com/474x/38/36/90/383690152a9823422c48481b3cbf499c.jpg"
+                                        alt="Finance Hub" class="w-full h-48 object-cover rounded-lg mb-6 shadow-md">
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="project-content">
+                            <div class="project-category"></div>
+                            <h3 class="project-title">Finance Hub</h3>
+                            <p class="project-description">Finance calculator UI with 5+ financial logic modules.</p>
+                            <div class="project-tech">
+                                <span>Html/css</span>
+                                <span>Bootstarp</span>
+                                <span>JSES6+</span>
+                                <span>Angular</span>
+                                <a href="https://dhanushkavinofficial.github.io/financecalx/" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="https://github.com/dhanushkavinofficial" class="project-link">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card" data-category="web">
+                        <div class="project-image">
+                            <div class="project-links">
+                                <img src="https://i.pinimg.com/474x/0c/9b/89/0c9b89b62ba04b4b4740f4ce2da28b54.jpg"
+                                    alt="Login UI" class="w-full h-48 object-cover rounded-lg mb-6 shadow-md">
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-category">Web Application</div>
+                            <h3 class="project-title">Logic Login/Signup</h3>
+                            <p class="project-description">Responsive login/signup UI built with JS validation and
+                                custom form logic.</p>
+                            <div class="project-tech">
+                                <span>HTML/CSS</span>
+                                <span>JS ES6+</span>
+                                <span>Bootstrap</span>
+                                <a href="https://dhanushkavinofficial.github.io/login/" class="project-link"
+                                    style="margin-left: 10px;">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="https://github.com/dhanushkavinofficial" class="project-link"
+                                    style="margin-left: 5px;">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card" data-category="web">
+                        <div class="project-image">
+                            <div class="project-links">
+                                <img src="https://i.pinimg.com/736x/7b/af/c1/7bafc179be2aa9a6da2dfe66c19bcd39.jpg"
+                                    alt="Hotstar" class="w-full h-48 object-cover rounded-lg mb-6 shadow-md">
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-category">Clone UI</div>
+                            <h3 class="project-title">Hotstar Clone</h3>
+                            <p class="project-description">A Hotstar-like responsive UI with sliders, thumbnails, and
+                                video previews.</p>
+                            <div class="project-tech">
+                                <span>HTML/CSS</span>
+                                <span>JS ES6+</span>
+                                <span>Flex/Grid</span>
+                                <a href="https://dhanushkavinofficial.github.io/hotstar/" class="project-link"
+                                    style="margin-left: 10px;">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="https://github.com/dhanushkavinofficial" class="project-link"
+                                    style="margin-left: 5px;">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card" data-category="web">
+                        <div class="project-image">
+                            <div class="project-links">
+                                <img src="https://i.pinimg.com/736x/52/9c/f7/529cf782df0975b52fbc878f1d68b1eb.jpg"
+                                    alt="Wander Wise" class="w-full h-48 object-cover rounded-lg mb-6 shadow-md">
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-category"></div>
+                            <h3 class="project-title">WinterWise</h3>
+                            <p class="project-description">Travel planner UI project to explore destinations & plan
+                                trips.
+                            <div class="project-tech">
+                                <span>HTML/CSS</span>
+                                <span>JS ES6+</span>
+                                <span>API Integration</span>
+                                <a href="https://dhanushkavinofficial.github.io/WanderWise-India/" class="project-link"
+                                    style="margin-left: 10px;">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="https://github.com/dhanushkavinofficial" class="project-link"
+                                    style="margin-left: 5px;">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </section>
+
+        <!-- CERTIFICATES SECTION - Achievement Gallery Layout -->
+        <section id="certificates" class="section certificates-layout">
+    <div class="certificates-container">
+        <div class="certificates-header">
+            <div class="section-badge">Achievements</div>
+            <h2 class="certificates-title">Certificates & Recognition</h2>
+        </div>
+
+        <div class="certificates-gallery">
+
+            <!-- Certificate 1 -->
+            <div class="certificate-card">
+                <div class="certificate-badge">
+                    <a href="https://www.hackerrank.com/certificates/ae4f4082485b"
+                            target="_blank">
+                            <img src="https://i.pinimg.com/1200x/6d/cf/f0/6dcff0ae1140f1143cd4a1b5057df515.jpg" height="175" width="175"
+                                alt="Certificate Thumbnail"
+                                class="w-full h-40 object-contain rounded-lg mb-6 shadow-md">
+                        </a>
+                    
+                </div>
+                <div class="certificate-content">
+                    <h3>JavaScript (Intermediate)</h3>
+                    <p class="certificate-issuer">HackerRank</p>
+                    <p class="certificate-date">December 2024</p>
+                    <div class="certificate-skills"><span>JavaScript</span></div>
+                    <div class="certificate-verification">
+                        <i class="fas fa-check-circle"></i><span>Verified</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Certificate 2 -->
+            <div class="certificate-card">
+                <div class="certificate-badge">
+                    
+                    <a href="https://docs.google.com/document/d/1UzVOGS3CUfDhnP-0rrgyvPGMPCfZnXi3X5O-OuwTnow/edit?usp=sharing"
+                            target="_blank">
+                            <img src="https://i.pinimg.com/280x280_RS/78/db/5b/78db5b72376092501affc2ac6b72b053.jpg"
+                                alt="Certificate Thumbnail"
+                                class="w-full h-40 object-contain rounded-lg mb-6 shadow-md">
+                        </a>
+
+                </div>
+                <div class="certificate-content">
+                    <h3>COURSE COMPLETION CERTIFICATE </h3>
+                    <p class="certificate-issuer">appin technology COIMBATORE</p>
+                    <p class="certificate-date">Date: 2025</p>
+                    <div class="certificate-skills"></div>
+                    <div class="certificate-verification">
+                        <i class="fas fa-check-circle"></i><span>Verified</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Certificate 3 -->
+            <div class="certificate-card">
+                <div class="certificate-badge">
+                     <a href="https://www.hackerrank.com/certificates/2afa50e9d3e5"
+                            target="_blank">
+                            <img src="https://i.pinimg.com/1200x/d8/78/57/d878571129fe9fcd0bc30ace1ffa2b10.jpg" height="175" width="175"
+                                alt="Certificate Thumbnail"
+                                class="w-full h-40 object-contain rounded-lg mb-6 shadow-md">
+                        </a>
+                </div>
+                <div class="certificate-content">
+                    <h3>Problem solving</h3>
+                    <p class="certificate-issuer">HackerRank</p>
+                    <p class="certificate-date">September 2024</p>
+                    <div class="certificate-skills"></div>
+                    <div class="certificate-verification">
+                        <i class="fas fa-check-circle"></i><span>Verified</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Certificate 4 -->
+            <div class="certificate-card">
+                <div class="certificate-badge">
+                     <a href="https://docs.google.com/document/d/1VdwFpjn0Rxxu_oygrzhwn-heoVXvg1ZDgHvOCopJi3E/edit?usp=sharing"
+                            target="_blank">
+                            <img src="https://i.pinimg.com/280x280_RS/78/db/5b/78db5b72376092501affc2ac6b72b053.jpg"
+                                alt="Certificate Thumbnail"
+                                class="w-full h-40 object-contain rounded-lg mb-6 shadow-md">
+                        </a>
+                </div>
+                <div class="certificate-content">
+                    <h3>PROJECT COMPLETION CERTIFICATE</h3>
+                    <p class="certificate-issuer"> Appin Technologies</p>
+                    <p class="certificate-date">Date: 2025</p>
+                    <div class="certificate-skills"><span>HTML/css/js/java</span></div>
+                    <div class="certificate-verification">
+                        <i class="fas fa-check-circle"></i><span>Verified</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Certificate 5 -->
+            <div class="certificate-card">
+                <div class="certificate-badge">
+                     <a href="https://www.hackerrank.com/certificates/47570d905caf"
+                            target="_blank">
+                            <img src="https://i.pinimg.com/736x/cd/fa/50/cdfa50f28db8557a03f03a16b5375260.jpg" width="160" height="160"
+                                alt="Certificate Thumbnail"
+                                class="w-full h-40 object-contain rounded-lg mb-6 shadow-md">
+                        </a>
+                </div>
+                <div class="certificate-content">
+                    <h3>JAVA SCRIPT (Basic)</h3>
+                    <p class="certificate-issuer">HackerRank</p>
+                    <p class="certificate-date">July 2024</p>
+                    <div class="certificate-skills"><span>JSES6+</span></div>
+                    <div class="certificate-verification">
+                        <i class="fas fa-check-circle"></i><span>Verified</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Certificate 6 -->
+            <div class="certificate-card">
+                <div class="certificate-badge">
+                     <a href="https://docs.google.com/document/d/1o8Cji2KAJmBO-pgPIKRVF0AwrvuyZzgepkut_p3OV1A/edit?usp=sharing"
+                            target="_blank">
+                            <img src="https://i.pinimg.com/736x/35/2a/52/352a52b2f6ce1566c2591053d105e9cd.jpg" width="150" height="150"
+                                alt="Certificate Thumbnail" style="border-radius: 100PX;"
+                                class="w-full h-40 object-contain rounded-lg mb-6 shadow-md">
+                        </a>
+                </div>
+                <div class="certificate-content">
+                    <h3>INTERNSHIP CERTIFICATE</h3>
+                    <p class="certificate-issuer"> ETHER SERVICES</p>
+                    <p class="certificate-date">Date: 2025</p>
+                    <div class="certificate-skills"></div>
+                    <div class="certificate-verification">
+                        <i class="fas fa-check-circle"></i><span>Verified</span>
+                    </div>
+                </div>
+            </div>
+
+        </div> <!-- .certificates-gallery -->
+    </div> <!-- .certificates-container -->
+</section>
+
+
+        <!-- EXPERIENCE SECTION - Professional Timeline Layout -->
+        <section id="experience" class="section experience-layout">
+            <div class="experience-container">
+                <div class="experience-header">
+                    <div class="section-badge">Career Journey</div>
+                    <h2 class="experience-title">Professional Experience</h2>
+                </div>
+
+                <div class="experience-timeline">
+                    <div class="timeline-line"></div>
+
+                    <div class="experience-item">
+                        <div class="experience-date">
+                            <span class="year">2024</span>
+                            <span class="duration">6 months</span>
+                        </div>
+                        <div class="experience-marker"></div>
+                        <div class="experience-content">
+                            <div class="experience-company">
+                                <h3>Software Development Intern</h3>
+                                <p class="company-name">Either SERVICES </p>
+                                <p class="location">Coimbatore, India</p>
+                            </div>
+                            <div class="experience-description">
+                                <p>Developed and maintained REST APIs using Spring Boot, collaborated with senior
+                                    developers on microservices architecture, and contributed to database optimization
+                                    projects that improved query performance by 40%.</p>
+                                <ul class="achievements">
+                                    <li>Built 5+ REST API endpoints with comprehensive documentation</li>
+                                    <li>Implemented JWT authentication and authorization</li>
+                                    <li>Optimized database queries reducing response time by 40%</li>
+                                    <li>Participated in code reviews and agile development practices</li>
+                                </ul>
+                            </div>
+                            <div class="experience-tech">
+                                <span>Html5/css3</span>
+                                <span>JSES6+</span>
+                                <span>JAVA</span>
+                                <span>Postman</span>
+                                <span>Spring Boot</span>
+                                <span>MySQL</span>
+                                <span>Git</span>
+                                <span>Devops</span>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    
+                </div>
+            </div>
+        </section>
+
+        <!-- ARTICLES SECTION - Magazine Layout -->
+        <section id="articles" class="section articles-layout">
+  <div class="articles-container">
+    <div class="articles-header">
+      <div class="section-badge">Knowledge Sharing</div>
+      <h2 class="articles-title">Latest Articles & Insights</h2>
+      <p class="articles-subtitle">Sharing knowledge and experiences from my development journey</p>
+    </div>
+
+    <div class="articles-grid">
+
+      <!-- Article 1 -->
+      <a href="https://dev.to/dhanush_kaving_f68718582/how-certificate-based-authentication-works-explained-with-cas-and-smart-cards-4fme" target="_blank" style="text-decoration: none; color: inherit;">
+        <div class="article-card featured">
+          <div class="article-image">
+            <img src="https://media2.dev.to/dynamic/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Flc22a6crs4n6r4mwd60f.png" width="200" height="200" alt="Spring Boot REST APIs">
+            <div class="article-category" style="border-radius: 100px;">Tutorial</div>
+            <div class="article-placeholder"><i class="fas fa-code"></i></div>
+          </div>
+          <div class="article-content">
+            <h3 class="article-title">How Certificate-Based Authentication Works: Explained with CAS++ and Smart Cards</h3>
+            <p class="article-excerpt">Explain why secure authentication matters in enterprise systems.</p>
+            <div class="article-meta">
+              <div class="article-author"><div class="author-avatar"><i class="fas fa-user"></i></div><span>Dhanush Kavin</span></div>
+              <div class="article-stats">
+                <span><i class="fas fa-calendar"></i> May, 2025</span>
+                <span><i class="fas fa-clock"></i> 12 min read</span>
+                <span><i class="fas fa-eye"></i></span>
+              </div>
+            </div>
+            <div class="article-tags">
+              <span>Spring Boot</span><span>Security</span><span>Java</span>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <!-- Article 2 -->
+     <a href="https://medium.com/@dhanushkavinofficial/understanding-process-management-in-operating-systems-9bd9300a223d" target="_blank" style="text-decoration: none; color: inherit;">
+  <div class="article-card" style="border-radius: 10px; overflow: hidden; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+    
+    <div class="article-image" style="background-image: url('https://i.pinimg.com/736x/eb/58/c1/eb58c120f8a34114597a645689308a10.jpg'); background-size: cover; background-position: center; height: 180px; position: relative;">
+      <div class="article-category" style="position: absolute; top: 10px; left: 10px; background-color: rgba(0,0,0,0.7); color: white; padding: 5px 10px; border-radius: 5px; font-size: 14px;">Airticle</div>
+      <div class="article-placeholder" style="position: absolute; bottom: 10px; left: 10px; font-size: 24px; color: white;"><i class="fas fa-laptop-code"></i></div>
+    </div>
+
+    <div class="article-content" style="padding: 15px; background-color: #fff;">
+      <h3 class="article-title" style="margin: 0 0 10px 0; font-size: 20px;">🧠 Understanding Process Management in Operating Systems</h3>
+      <p class="article-excerpt" style="margin: 0 0 15px 0; font-size: 14px; color: #555;">Explore how operating systems manage processes behind the scenes.</p>
+
+      <div class="article-meta" style="display: flex; justify-content: space-between; font-size: 13px; color: #888;">
+        <span><i class="fas fa-calendar"></i> Jul 16, 2025</span>
+        <span><i class="fas fa-clock"></i> 3 min read</span>
+      </div>
+
+      <div class="article-tags" style="margin-top: 12px;">
+        <span style="display: inline-block; background-color: #f1f1f1; padding: 4px 8px; border-radius: 4px; margin-right: 5px;">Career</span>
+        <span style="display: inline-block; background-color: #f1f1f1; padding: 4px 8px; border-radius: 4px;">Development</span>
+      </div>
+    </div>
+  </div>
+</a>
+
+
+      <!-- Article 3 -->
+      <a href="https://medium.com/@dhanushkavinofficial/securing-java-applications-a-practical-guide-to-implementing-jwt-authentication-0f6f7555eb82" target="_blank" style="text-decoration: none; color: inherit;">
+  <div class="article-card" style="border-radius: 10px; overflow: hidden; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+    
+    <div class="article-image" style="background-image: url('https://i.pinimg.com/736x/f6/b7/7f/f6b77f354db412f9bd3c2aad879f1cd1.jpg'); background-size: cover; background-position: center; height: 180px; position: relative;">
+      <div class="article-category" style="position: absolute; top: 10px; left: 10px; background-color: rgba(0,0,0,0.7); color: white; padding: 5px 10px; border-radius: 5px; font-size: 14px;">Career</div>
+      <div class="article-placeholder" style="position: absolute; bottom: 10px; left: 10px; font-size: 24px; color: white;"><i class="fas fa-laptop-code"></i></div>
+    </div>
+
+    <div class="article-content" style="padding: 15px; background-color: #fff;">
+      <h3 class="article-title" style="margin: 0 0 10px 0; font-size: 20px;">🧠 Implementing JWT Authentication</h3>
+      <p class="article-excerpt" style="margin: 0 0 15px 0; font-size: 14px; color: #555;">Securing Java Applications: A Practical Guide to Implementing JWT Authentication.</p>
+
+      <div class="article-meta" style="display: flex; justify-content: space-between; font-size: 13px; color: #888;">
+        <span><i class="fas fa-calendar"></i> Jul 11, 2025</span>
+        <span><i class="fas fa-clock"></i> </span>
+      </div>
+
+      <div class="article-tags" style="margin-top: 12px;">
+        <span style="display: inline-block; background-color: #f1f1f1; padding: 4px 8px; border-radius: 4px; margin-right: 5px;">Career</span>
+        <span style="display: inline-block; background-color: #f1f1f1; padding: 4px 8px; border-radius: 4px;">Development</span>
+      </div>
+    </div>
+  </div>
+</a>
+
+
+      <!-- Article 4 -->
+      
+
+    </div> <!-- .articles-grid -->
+  </div> <!-- .articles-container -->
+</section>
+
+
+        <!-- CONTACT SECTION - Contact Form Layout -->
+        <section id="contact" class="section contact-layout">
+            <div class="contact-container">
+                <div class="contact-header">
+                    <div class="section-badge">Let's Connect</div>
+                    <h2 class="contact-title">Get In Touch</h2>
+                    <p class="contact-subtitle">Ready to bring your ideas to life? Let's discuss your next project</p>
+                </div>
+
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Email</h4>
+                                <p>dhanushkavinofficial@gamil.com</p>
+                                <a href="mailto:devportfolio@example.com">Send a message</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fab fa-linkedin"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>LinkedIn</h4>
+                                <p>linkedin.com/Dhanush Kavin G
+ </p>
+                                <a href="www.linkedin.com/in/dhanush-kavin-g-16b006314">Connect with me</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fab fa-github"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>GitHub</h4>
+                                <p>github.com/devhandle</p>
+                                <a href="https://github.com/dhanushkavinofficial">View my code</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Location</h4>
+                                <p>Tiruppur, India</p>
+                                <a href="https://maps.app.goo.gl/mJg1SDHcSdh1yAvQ8">View on map</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-form-wrapper">
+                        <form class="contact-form" id="contactForm">
+                            <div class="form-group">
+                                <label for="name">Full Name</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">Email Address</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="subject">Subject</label>
+                                <input type="text" id="subject" name="subject" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" rows="6" required></textarea>
+                            </div>
+
+                            <button type="submit" class="btn-primary-custom">
+                                <span>Send Message</span>
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-left">
+                    <div class="footer-logo">
+                        <i class=""></i> DK
+                    </div>
+                    <p>Crafting exceptional digital experiences with passion and precision.</p>
+                </div>
+                <div class="footer-right">
+                    <div class="social-links">
+                        <a href="https://github.com/dhanushkavinofficial"><i class="fab fa-github"></i></a>
+                        <a href="www.linkedin.com/in/dhanush-kavin-g-16b006314"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://medium.com/@dhanushkavinofficial"><i class="fa-solid fa-newspaper"></i></a>
+                        <a href="https://www.cornell.edu/"><i class="fa-brands fa-researchgate"></i></a>
+                        <a href="https://dev.to/dhanush_kaving_f68718582"><i class="fa-solid fa-bookmark"></i></i></a>
+                    </div>
+                    <p>&copy; 2025 AppleStyle Portfolio. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
