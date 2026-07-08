@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects — Dhanush Kavin G</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- ══════════════════ NAVIGATION ══════════════════ -->
+<nav id="siteNav">
+  <div class="nav-inner">
+    <a class="nav-logo" href="index.html" style="cursor:pointer">DK<span>.</span></a>
+
+    <div class="nav-links" id="navLinks">
+      <a class="nav-link" href="index.html">Home</a>
+      <a class="nav-link" href="about.html">About</a>
+      <a class="nav-link" href="skills.html">Skills</a>
+      <a class="nav-link active" href="projects.html">Projects</a>
+      <a class="nav-link" href="articles.html">Articles</a>
+      <a class="nav-link" href="certificates.html">Certificates</a>
+      <a class="nav-link" href="experience.html">Experience</a>
+      <a class="nav-link" href="contact.html">Contact</a>
+    </div>
+
+    <div class="nav-hamburger" id="hamburger" onclick="toggleMenu()">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+</nav>
+
+<div class="mobile-menu" id="mobileMenu">
+  <button onclick="location.href='index.html'">Home</button>
+  <button onclick="location.href='about.html'">About</button>
+  <button onclick="location.href='skills.html'">Skills</button>
+  <button onclick="location.href='projects.html'">Projects</button>
+  <button onclick="location.href='articles.html'">Articles</button>
+  <button onclick="location.href='certificates.html'">Certificates</button>
+  <button onclick="location.href='experience.html'">Experience</button>
+  <button onclick="location.href='contact.html'">Contact</button>
+</div>
+
+<!-- ══════════════════ PROJECTS ══════════════════ -->
+<section id="projects" class="section active">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">Work</div>
+      <h2>Featured Projects</h2>
+      <p>A selection of projects built to practice, learn, and demonstrate full-stack capability.</p>
+    </div>
+
+    <div class="proj-filters">
+      <button class="filter-btn active" onclick="filterProjects(this,'all')">All Projects</button>
+      <button class="filter-btn" onclick="filterProjects(this,'web')">Web Apps</button>
+      <button class="filter-btn" onclick="filterProjects(this,'api')">APIs</button>
+    </div>
+
+    <div class="projects-grid">
+
+      <div class="proj-card" data-cat="web">
+        <img class="proj-img" src="https://i.pinimg.com/736x/85/d5/2c/85d52c7ddfbf966d7361084256daf436.jpg" alt="Skyline Mart" onerror="this.outerHTML='<div class=\'proj-img-placeholder\'><i class=\'fas fa-store\'></i></div>'">
+        <div class="proj-body">
+          <div class="proj-cat">E-Commerce</div>
+          <div class="proj-title">Skyline Mart</div>
+          <div class="proj-desc">E-commerce platform built to practice web design and frontend code interaction patterns.</div>
+          <div class="proj-footer">
+            <div class="proj-stack">
+              <span class="stack-tag">HTML/CSS</span><span class="stack-tag">JS ES6+</span><span class="stack-tag">Bootstrap</span><span class="stack-tag">Angular</span>
+            </div>
+            <div class="proj-links">
+              <a class="proj-link" href="https://dhanushkavinofficial.github.io/skylinemart/" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+              <a class="proj-link" href="https://github.com/dhanushkavinofficial" target="_blank"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+       <div class="proj-card" data-cat="web">
+        <img class="proj-img" src="https://i.pinimg.com/736x/ca/f1/b7/caf1b77bff6f3b417e8b76a1b90c04bd.jpg" alt="YouTube Clone" onerror="this.outerHTML='<div class=\'proj-img-placeholder\'><i class=\'fab fa-youtube\'></i></div>'">
+        <div class="proj-body">
+          <div class="proj-cat">MathVision</div>
+          <div class="proj-title">MathVision</div>
+          <div class="proj-desc">Basic  UI clone with live interaction features, comment section, and responsive layout.</div>
+          <div class="proj-footer">
+            <div class="proj-stack">
+              <span class="stack-tag">HTML/CSS</span><span class="stack-tag">Bootstrap</span><span class="stack-tag">JS ES6+</span>
+            </div>
+            <div class="proj-links">
+              <a class="proj-link" href="https://dhanushkavinofficial.github.io/MathVision-Interactive-Mathematics-Learning-Platform/" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+              <a class="proj-link" href="https://github.com/dhanushkavinofficial/MathVision-Interactive-Mathematics-Learning-Platform" target="_blank"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="proj-card" data-cat="web">
+        <img class="proj-img" src="https://i.pinimg.com/474x/38/36/90/383690152a9823422c48481b3cbf499c.jpg" alt="Finance Hub" onerror="this.outerHTML='<div class=\'proj-img-placeholder\'><i class=\'fas fa-chart-pie\'></i></div>'">
+        <div class="proj-body">
+          <div class="proj-cat">Finance Tool</div>
+          <div class="proj-title">Finance Hub</div>
+          <div class="proj-desc">Finance calculator UI featuring 5+ financial logic modules for loan, interest, and investment calculations.</div>
+          <div class="proj-footer">
+            <div class="proj-stack">
+              <span class="stack-tag">HTML/CSS</span><span class="stack-tag">JS ES6+</span><span class="stack-tag">Bootstrap</span><span class="stack-tag">Angular</span>
+            </div>
+            <div class="proj-links">
+              <a class="proj-link" href="https://dhanushkavinofficial.github.io/financecalx/" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+              <a class="proj-link" href="https://github.com/dhanushkavinofficial" target="_blank"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="proj-card" data-cat="web">
+        <img class="proj-img" src="https://i.pinimg.com/474x/5f/34/2f/5f342f3d80031c8196d4cce3863b6f29.jpg" alt="DK Secure Pass" onerror="this.outerHTML='<div class=\'proj-img-placeholder\'><i class=\'fas fa-lock\'></i></div>'">
+        <div class="proj-body">
+          <div class="proj-cat">Security</div>
+          <div class="proj-title">DK Secure Pass</div>
+          <div class="proj-desc">Secure password generator with customisable complexity rules and export-to-PDF functionality.</div>
+          <div class="proj-footer">
+            <div class="proj-stack">
+              <span class="stack-tag">HTML/CSS</span><span class="stack-tag">JS ES6+</span><span class="stack-tag">Bootstrap</span><span class="stack-tag">Angular</span>
+            </div>
+            <div class="proj-links">
+              <a class="proj-link" href="https://dhanushkavinofficial.github.io/DKsecure/" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+              <a class="proj-link" href="https://github.com/dhanushkavinofficial" target="_blank"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="proj-card" data-cat="web">
+        <img class="proj-img" src="https://i.pinimg.com/736x/52/9c/f7/529cf782df0975b52fbc878f1d68b1eb.jpg" alt="WanderWise" onerror="this.outerHTML='<div class=\'proj-img-placeholder\'><i class=\'fas fa-map\'></i></div>'">
+        <div class="proj-body">
+          <div class="proj-cat">Travel</div>
+          <div class="proj-title">WanderWise</div>
+          <div class="proj-desc">India travel planner UI with destination discovery and trip planning features using API integration.</div>
+          <div class="proj-footer">
+            <div class="proj-stack">
+              <span class="stack-tag">HTML/CSS</span><span class="stack-tag">JS ES6+</span><span class="stack-tag">API</span>
+            </div>
+            <div class="proj-links">
+              <a class="proj-link" href="https://dhanushkavinofficial.github.io/WanderWise-India/" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+              <a class="proj-link" href="https://github.com/dhanushkavinofficial" target="_blank"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="proj-card" data-cat="api">
+        <img class="proj-img" src="https://i.pinimg.com/736x/94/9d/28/949d28d90592f3f66fe4c344a48abad2.jpg" alt="Google Search Engine" onerror="this.outerHTML='<div class=\'proj-img-placeholder\'><i class=\'fab fa-google\'></i></div>'">
+        <div class="proj-body">
+          <div class="proj-cat">API Integration</div>
+          <div class="proj-title">Google Search Engine</div>
+          <div class="proj-desc">Search engine UI built with Google Custom Search API — practice for frontend logic and API integration.</div>
+          <div class="proj-footer">
+            <div class="proj-stack">
+              <span class="stack-tag">HTML/CSS</span><span class="stack-tag">Bootstrap</span><span class="stack-tag">Google API</span>
+            </div>
+            <div class="proj-links">
+              <a class="proj-link" href="https://dhanushkavinofficial.github.io/google/" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+              <a class="proj-link" href="https://github.com/dhanushkavinofficial" target="_blank"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="proj-card" data-cat="web">
+        <img class="proj-img" src="https://i.pinimg.com/474x/29/89/05/29890559373c2222b4ff82279bd6a330.jpg" alt="NextGenDepot" onerror="this.outerHTML='<div class=\'proj-img-placeholder\'><i class=\'fas fa-warehouse\'></i></div>'">
+        <div class="proj-body">
+          <div class="proj-cat">Enterprise UI</div>
+          <div class="proj-title">NextGenDepot</div>
+          <div class="proj-desc">Warehouse management enterprise UI — practice with modern frontend architecture and component design.</div>
+          <div class="proj-footer">
+            <div class="proj-stack">
+              <span class="stack-tag">HTML/CSS</span><span class="stack-tag">JS ES6+</span><span class="stack-tag">Bootstrap</span><span class="stack-tag">Angular</span>
+            </div>
+            <div class="proj-links">
+              <a class="proj-link" href="https://dhanushkavinofficial.github.io/Warehouse/" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+              <a class="proj-link" href="https://github.com/dhanushkavinofficial" target="_blank"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="proj-card" data-cat="web">
+        <img class="proj-img" src="https://i.pinimg.com/474x/c8/bc/49/c8bc4907863e6f8fdc12e13e24d3587d.jpg" alt="Netflix Clone" onerror="this.outerHTML='<div class=\'proj-img-placeholder\'><i class=\'fas fa-film\'></i></div>'">
+        <div class="proj-body">
+          <div class="proj-cat">Clone UI</div>
+          <div class="proj-title">Netflix UI Clone</div>
+          <div class="proj-desc">Netflix-inspired frontend UI — complex layout building practice using CSS Grid and Flexbox.</div>
+          <div class="proj-footer">
+            <div class="proj-stack">
+              <span class="stack-tag">HTML/CSS</span><span class="stack-tag">Bootstrap</span><span class="stack-tag">JS ES6+</span>
+            </div>
+            <div class="proj-links">
+              <a class="proj-link" href="https://dhanushkavinofficial.github.io/Netflix/" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+              <a class="proj-link" href="https://github.com/dhanushkavinofficial" target="_blank"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="proj-card" data-cat="web">
+        <img class="proj-img" src="https://i.pinimg.com/736x/7b/af/c1/7bafc179be2aa9a6da2dfe66c19bcd39.jpg" alt="Hotstar Clone" onerror="this.outerHTML='<div class=\'proj-img-placeholder\'><i class=\'fas fa-play-circle\'></i></div>'">
+        <div class="proj-body">
+          <div class="proj-cat">Clone UI</div>
+          <div class="proj-title">Hotstar Clone</div>
+          <div class="proj-desc">Hotstar-like responsive UI with sliders, thumbnails, and video card previews.</div>
+          <div class="proj-footer">
+            <div class="proj-stack">
+              <span class="stack-tag">HTML/CSS</span><span class="stack-tag">JS ES6+</span><span class="stack-tag">Grid/Flex</span>
+            </div>
+            <div class="proj-links">
+              <a class="proj-link" href="https://dhanushkavinofficial.github.io/hotstar/" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+              <a class="proj-link" href="https://github.com/dhanushkavinofficial" target="_blank"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="proj-card" data-cat="web">
+        <img class="proj-img" src="https://i.pinimg.com/736x/0c/9b/89/0c9b89b62ba04b4b4740f4ce2da28b54.jpg" alt="Logic Login" onerror="this.outerHTML='<div class=\'proj-img-placeholder\'><i class=\'fas fa-sign-in-alt\'></i></div>'">
+        <div class="proj-body">
+          <div class="proj-cat">Auth UI</div>
+          <div class="proj-title">Logic Login / Signup</div>
+          <div class="proj-desc">Responsive login/signup UI with JS form validation and custom authentication logic.</div>
+          <div class="proj-footer">
+            <div class="proj-stack">
+              <span class="stack-tag">HTML/CSS</span><span class="stack-tag">JS ES6+</span><span class="stack-tag">Bootstrap</span>
+            </div>
+            <div class="proj-links">
+              <a class="proj-link" href="https://dhanushkavinofficial.github.io/login/" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+              <a class="proj-link" href="https://github.com/dhanushkavinofficial" target="_blank"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="proj-card" data-cat="web">
+        <img class="proj-img" src="https://i.pinimg.com/474x/00/57/cc/0057cc3ac15ea8fb7b41352129121eb2.jpg" alt="YouTube Clone" onerror="this.outerHTML='<div class=\'proj-img-placeholder\'><i class=\'fab fa-youtube\'></i></div>'">
+        <div class="proj-body">
+          <div class="proj-cat">Clone UI</div>
+          <div class="proj-title">YouTube UI Clone</div>
+          <div class="proj-desc">Basic YouTube UI clone with live interaction features, comment section, and responsive layout.</div>
+          <div class="proj-footer">
+            <div class="proj-stack">
+              <span class="stack-tag">HTML/CSS</span><span class="stack-tag">Bootstrap</span><span class="stack-tag">JS ES6+</span>
+            </div>
+            <div class="proj-links">
+              <a class="proj-link" href="https://dhanushkavinofficial.github.io/YOUtube/" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+              <a class="proj-link" href="https://github.com/dhanushkavinofficial" target="_blank"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="proj-card" data-cat="web">
+        <img class="proj-img" src="https://i.pinimg.com/474x/eb/b0/6c/ebb06c81e02cfc7733d81c22428f1e75.jpg" alt="Age Calculator" onerror="this.outerHTML='<div class=\'proj-img-placeholder\'><i class=\'fas fa-calculator\'></i></div>'">
+        <div class="proj-body">
+          <div class="proj-cat">Utility</div>
+          <div class="proj-title">Age Calculator</div>
+          <div class="proj-desc">Frontend UI and logic to calculate user age with precise date input handling.</div>
+          <div class="proj-footer">
+            <div class="proj-stack">
+              <span class="stack-tag">HTML/CSS</span><span class="stack-tag">Bootstrap</span><span class="stack-tag">JS ES6+</span><span class="stack-tag">Angular</span>
+            </div>
+            <div class="proj-links">
+              <a class="proj-link" href="https://dhanushkavinofficial.github.io/agecalxe/" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+              <a class="proj-link" href="https://github.com/dhanushkavinofficial" target="_blank"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════ FOOTER ══════════════════ -->
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div>
+      <div class="footer-logo">DK<span>.</span></div>
+      <div class="footer-copy">© 2025 Dhanush Kavin G. All rights reserved.</div>
+    </div>
+    <div class="footer-socials">
+      <a class="footer-social" href="https://github.com/dhanushkavinofficial" target="_blank"><i class="fab fa-github"></i></a>
+      <a class="footer-social" href="https://www.linkedin.com/in/dhanushkaving1" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a class="footer-social" href="https://medium.com/@dhanushkavinofficial" target="_blank"><i class="fab fa-medium"></i></a>
+      <a class="footer-social" href="https://dev.to/dhanush_kaving_f68718582" target="_blank"><i class="fas fa-bookmark"></i></a>
+    </div>
+  </div>
+</footer>
+
+<script src="common.js"></script>
+<script src="animations.js"></script>
+<script src="projects.js"></script>
+
+</body>
+</html>

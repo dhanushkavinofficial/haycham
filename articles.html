@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Articles — Dhanush Kavin G</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- ══════════════════ NAVIGATION ══════════════════ -->
+<nav id="siteNav">
+  <div class="nav-inner">
+    <a class="nav-logo" href="index.html" style="cursor:pointer">DK<span>.</span></a>
+
+    <div class="nav-links" id="navLinks">
+      <a class="nav-link" href="index.html">Home</a>
+      <a class="nav-link" href="about.html">About</a>
+      <a class="nav-link" href="skills.html">Skills</a>
+      <a class="nav-link" href="projects.html">Projects</a>
+      <a class="nav-link active" href="articles.html">Articles</a>
+      <a class="nav-link" href="certificates.html">Certificates</a>
+      <a class="nav-link" href="experience.html">Experience</a>
+      <a class="nav-link" href="contact.html">Contact</a>
+    </div>
+
+    <div class="nav-hamburger" id="hamburger" onclick="toggleMenu()">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+</nav>
+
+<div class="mobile-menu" id="mobileMenu">
+  <button onclick="location.href='index.html'">Home</button>
+  <button onclick="location.href='about.html'">About</button>
+  <button onclick="location.href='skills.html'">Skills</button>
+  <button onclick="location.href='projects.html'">Projects</button>
+  <button onclick="location.href='articles.html'">Articles</button>
+  <button onclick="location.href='certificates.html'">Certificates</button>
+  <button onclick="location.href='experience.html'">Experience</button>
+  <button onclick="location.href='contact.html'">Contact</button>
+</div>
+
+<!-- ══════════════════ ARTICLES ══════════════════ -->
+<section id="articles" class="section active">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">Writing</div>
+      <h2>Articles &amp; Insights</h2>
+      <p>Technical writing on Java, OS concepts, security, mathematics, and software engineering.</p>
+    </div>
+    <div class="articles-grid" id="articlesGrid"></div>
+  </div>
+</section>
+
+<!-- ══════════════════ FOOTER ══════════════════ -->
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div>
+      <div class="footer-logo">DK<span>.</span></div>
+      <div class="footer-copy">© 2025 Dhanush Kavin G. All rights reserved.</div>
+    </div>
+    <div class="footer-socials">
+      <a class="footer-social" href="https://github.com/dhanushkavinofficial" target="_blank"><i class="fab fa-github"></i></a>
+      <a class="footer-social" href="https://www.linkedin.com/in/dhanushkaving1" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a class="footer-social" href="https://medium.com/@dhanushkavinofficial" target="_blank"><i class="fab fa-medium"></i></a>
+      <a class="footer-social" href="https://dev.to/dhanush_kaving_f68718582" target="_blank"><i class="fas fa-bookmark"></i></a>
+    </div>
+  </div>
+</footer>
+
+<script src="common.js"></script>
+<script src="animations.js"></script>
+<script src="articles-data.js"></script>
+<script src="articles.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — Dhanush Kavin G</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- ══════════════════ NAVIGATION ══════════════════ -->
+<nav id="siteNav">
+  <div class="nav-inner">
+    <a class="nav-logo" href="index.html" style="cursor:pointer">DK<span>.</span></a>
+
+    <div class="nav-links" id="navLinks">
+      <a class="nav-link" href="index.html">Home</a>
+      <a class="nav-link" href="about.html">About</a>
+      <a class="nav-link" href="skills.html">Skills</a>
+      <a class="nav-link" href="projects.html">Projects</a>
+      <a class="nav-link" href="articles.html">Articles</a>
+      <a class="nav-link" href="certificates.html">Certificates</a>
+      <a class="nav-link" href="experience.html">Experience</a>
+      <a class="nav-link active" href="contact.html">Contact</a>
+    </div>
+
+    <div class="nav-hamburger" id="hamburger" onclick="toggleMenu()">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+</nav>
+
+<div class="mobile-menu" id="mobileMenu">
+  <button onclick="location.href='index.html'">Home</button>
+  <button onclick="location.href='about.html'">About</button>
+  <button onclick="location.href='skills.html'">Skills</button>
+  <button onclick="location.href='projects.html'">Projects</button>
+  <button onclick="location.href='articles.html'">Articles</button>
+  <button onclick="location.href='certificates.html'">Certificates</button>
+  <button onclick="location.href='experience.html'">Experience</button>
+  <button onclick="location.href='contact.html'">Contact</button>
+</div>
+
+<!-- ══════════════════ CONTACT ══════════════════ -->
+<section id="contact" class="section active">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">Connect</div>
+      <h2>Get In Touch</h2>
+      <p>Open to SDE1 roles, collaborations, and research conversations.</p>
+    </div>
+
+    <div class="contact-wrap">
+      <div class="contact-items">
+
+        <div class="contact-item">
+          <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+          <div>
+            <h4>Email</h4>
+            <p>dhanushkavinofficial@gmail.com</p>
+            <a href="mailto:dhanushkavinofficial@gmail.com">Send a message →</a>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div class="contact-icon"><i class="fab fa-linkedin"></i></div>
+          <div>
+            <h4>LinkedIn</h4>
+            <p>Dhanush Kavin G</p>
+            <a href="https://www.linkedin.com/in/dhanushkaving1" target="_blank">Connect →</a>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div class="contact-icon"><i class="fab fa-github"></i></div>
+          <div>
+            <h4>GitHub</h4>
+            <p>dhanushkavinofficial</p>
+            <a href="https://github.com/dhanushkavinofficial" target="_blank">View code →</a>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div class="contact-icon"><i class="fab fa-medium"></i></div>
+          <div>
+            <h4>Medium</h4>
+            <p>@dhanushkavinofficial</p>
+            <a href="https://medium.com/@dhanushkavinofficial" target="_blank">Read articles →</a>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div class="contact-icon" style="background:var(--surface)"><i class="fas fa-bookmark"></i></div>
+          <div>
+            <h4>Dev.to</h4>
+            <p>dhanush_kaving</p>
+            <a href="https://dev.to/dhanush_kaving_f68718582" target="_blank">View posts →</a>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+          <div>
+            <h4>Location</h4>
+            <p>Tiruppur / Coimbatore, Tamil Nadu, India</p>
+            <a href="https://maps.app.goo.gl/mJg1SDHcSdh1yAvQ8" target="_blank">View on map →</a>
+          </div>
+        </div>
+
+      </div>
+
+      <div>
+        <div class="contact-form-wrap">
+          <div class="form-title">Send a Message</div>
+          <form class="contact-form" id="contactForm" onsubmit="submitForm(event)">
+            <div class="form-row">
+              <div class="form-group">
+                <label>Full Name</label>
+                <input type="text" placeholder="Your name" required>
+              </div>
+              <div class="form-group">
+                <label>Email Address</label>
+                <input type="email" placeholder="your@email.com" required>
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Subject</label>
+              <input type="text" placeholder="What's this about?" required>
+            </div>
+            <div class="form-group">
+              <label>Message</label>
+              <textarea placeholder="Your message..." required></textarea>
+            </div>
+            <button type="submit" class="btn-primary" style="align-self:flex-start">
+              <i class="fas fa-paper-plane" style="font-size:13px"></i> Send Message
+            </button>
+            <div class="form-success" id="formSuccess">
+              <i class="fas fa-check-circle"></i> Thanks! Message received. I'll get back to you soon.
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════ FOOTER ══════════════════ -->
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div>
+      <div class="footer-logo">DK<span>.</span></div>
+      <div class="footer-copy">© 2025 Dhanush Kavin G. All rights reserved.</div>
+    </div>
+    <div class="footer-socials">
+      <a class="footer-social" href="https://github.com/dhanushkavinofficial" target="_blank"><i class="fab fa-github"></i></a>
+      <a class="footer-social" href="https://www.linkedin.com/in/dhanushkaving1" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a class="footer-social" href="https://medium.com/@dhanushkavinofficial" target="_blank"><i class="fab fa-medium"></i></a>
+      <a class="footer-social" href="https://dev.to/dhanush_kaving_f68718582" target="_blank"><i class="fas fa-bookmark"></i></a>
+    </div>
+  </div>
+</footer>
+
+<script src="common.js"></script>
+<script src="animations.js"></script>
+<script src="contact.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Certificates — Dhanush Kavin G</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- ══════════════════ NAVIGATION ══════════════════ -->
+<nav id="siteNav">
+  <div class="nav-inner">
+    <a class="nav-logo" href="index.html" style="cursor:pointer">DK<span>.</span></a>
+
+    <div class="nav-links" id="navLinks">
+      <a class="nav-link" href="index.html">Home</a>
+      <a class="nav-link" href="about.html">About</a>
+      <a class="nav-link" href="skills.html">Skills</a>
+      <a class="nav-link" href="projects.html">Projects</a>
+      <a class="nav-link" href="articles.html">Articles</a>
+      <a class="nav-link active" href="certificates.html">Certificates</a>
+      <a class="nav-link" href="experience.html">Experience</a>
+      <a class="nav-link" href="contact.html">Contact</a>
+    </div>
+
+    <div class="nav-hamburger" id="hamburger" onclick="toggleMenu()">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+</nav>
+
+<div class="mobile-menu" id="mobileMenu">
+  <button onclick="location.href='index.html'">Home</button>
+  <button onclick="location.href='about.html'">About</button>
+  <button onclick="location.href='skills.html'">Skills</button>
+  <button onclick="location.href='projects.html'">Projects</button>
+  <button onclick="location.href='articles.html'">Articles</button>
+  <button onclick="location.href='certificates.html'">Certificates</button>
+  <button onclick="location.href='experience.html'">Experience</button>
+  <button onclick="location.href='contact.html'">Contact</button>
+</div>
+
+<!-- ══════════════════ CERTIFICATES ══════════════════ -->
+<section id="certificates" class="section active">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">Achievements</div>
+      <h2>Certificates &amp; Recognition</h2>
+    </div>
+    <div class="certs-grid">
+
+      <a class="cert-card" href="https://www.hackerrank.com/certificates/ae4f4082485b" target="_blank">
+        <img class="cert-thumb" src="https://i.pinimg.com/1200x/6d/cf/f0/6dcff0ae1140f1143cd4a1b5057df515.jpg" alt="JavaScript Intermediate">
+        <div class="cert-body">
+          <div class="cert-issuer">HackerRank</div>
+          <div class="cert-title">JavaScript (Intermediate)</div>
+          <div class="cert-date">December 2024</div>
+          <div class="cert-verified"><i class="fas fa-check-circle"></i> Verified</div>
+        </div>
+      </a>
+
+      <a class="cert-card" href="https://www.hackerrank.com/certificates/47570d905caf" target="_blank">
+        <img class="cert-thumb" src="https://i.pinimg.com/736x/cd/fa/50/cdfa50f28db8557a03f03a16b5375260.jpg" alt="JavaScript Basic">
+        <div class="cert-body">
+          <div class="cert-issuer">HackerRank</div>
+          <div class="cert-title">JavaScript (Basic)</div>
+          <div class="cert-date">July 2024</div>
+          <div class="cert-verified"><i class="fas fa-check-circle"></i> Verified</div>
+        </div>
+      </a>
+
+      <a class="cert-card" href="https://www.hackerrank.com/certificates/2afa50e9d3e5" target="_blank">
+        <img class="cert-thumb" src="https://i.pinimg.com/1200x/d8/78/57/d878571129fe9fcd0bc30ace1ffa2b10.jpg" alt="Problem Solving">
+        <div class="cert-body">
+          <div class="cert-issuer">HackerRank</div>
+          <div class="cert-title">Problem Solving</div>
+          <div class="cert-date">September 2024</div>
+          <div class="cert-verified"><i class="fas fa-check-circle"></i> Verified</div>
+        </div>
+      </a>
+
+      <a class="cert-card" href="https://docs.google.com/document/d/1o8Cji2KAJmBO-pgPIKRVF0AwrvuyZzgepkut_p3OV1A/edit?usp=sharing" target="_blank">
+        <img class="cert-thumb" src="https://i.pinimg.com/736x/35/2a/52/352a52b2f6ce1566c2591053d105e9cd.jpg" alt="Internship Certificate" style="border-radius:50%;width:100px;height:100px;margin:20px auto;padding:0;display:block;object-fit:cover">
+        <div class="cert-body">
+          <div class="cert-issuer">Ether Services</div>
+          <div class="cert-title">Internship Certificate</div>
+          <div class="cert-date">2025</div>
+          <div class="cert-verified"><i class="fas fa-check-circle"></i> Verified</div>
+        </div>
+      </a>
+
+      <a class="cert-card" href="https://docs.google.com/document/d/1UzVOGS3CUfDhnP-0rrgyvPGMPCfZnXi3X5O-OuwTnow/edit?usp=sharing" target="_blank">
+        <img class="cert-thumb" src="https://i.pinimg.com/280x280_RS/78/db/5b/78db5b72376092501affc2ac6b72b053.jpg" alt="Course Completion">
+        <div class="cert-body">
+          <div class="cert-issuer">Appin Technology</div>
+          <div class="cert-title">Course Completion Certificate</div>
+          <div class="cert-date">2025</div>
+          <div class="cert-verified"><i class="fas fa-check-circle"></i> Verified</div>
+        </div>
+      </a>
+
+      <a class="cert-card" href="https://docs.google.com/document/d/1VdwFpjn0Rxxu_oygrzhwn-heoVXvg1ZDgHvOCopJi3E/edit?usp=sharing" target="_blank">
+        <img class="cert-thumb" src="https://i.pinimg.com/280x280_RS/78/db/5b/78db5b72376092501affc2ac6b72b053.jpg" alt="Project Completion">
+        <div class="cert-body">
+          <div class="cert-issuer">Appin Technologies</div>
+          <div class="cert-title">Project Completion Certificate</div>
+          <div class="cert-date">2025</div>
+          <div class="cert-verified"><i class="fas fa-check-circle"></i> Verified</div>
+        </div>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════ FOOTER ══════════════════ -->
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div>
+      <div class="footer-logo">DK<span>.</span></div>
+      <div class="footer-copy">© 2025 Dhanush Kavin G. All rights reserved.</div>
+    </div>
+    <div class="footer-socials">
+      <a class="footer-social" href="https://github.com/dhanushkavinofficial" target="_blank"><i class="fab fa-github"></i></a>
+      <a class="footer-social" href="https://www.linkedin.com/in/dhanushkaving1" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a class="footer-social" href="https://medium.com/@dhanushkavinofficial" target="_blank"><i class="fab fa-medium"></i></a>
+      <a class="footer-social" href="https://dev.to/dhanush_kaving_f68718582" target="_blank"><i class="fas fa-bookmark"></i></a>
+    </div>
+  </div>
+</footer>
+
+<script src="common.js"></script>
+<script src="animations.js"></script>
+<script src="certificates.js"></script>
+
+</body>
+</html>
