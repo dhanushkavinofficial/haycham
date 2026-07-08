@@ -100,7 +100,7 @@ python3 -m http.server 5500
 2. Go to **Settings → Pages**.
 3. Under **Build and deployment**, set **Source** to `Deploy from a branch`.
 4. Choose the `main` branch and `/ (root)` folder, then save.
-5. Your site will be live at `https://<your-username>.github.io/<your-repo>/`.
+5. Your site will be live at `https://dhanushkavinofficial.github.io/haycham/`.
 
 ---
 
@@ -117,7 +117,7 @@ python3 -m http.server 5500
 ## 📬 Contact
 
 - Email: dhanushkavinofficial@gmail.com
-- LinkedIn: [dhanushkaving1](https://www.linkedin.com/in/dhanushkaving1)
+- LinkedIn: [dhanushkaving1](https://www.linkedin.com/in/dhanushkaving1/)
 - GitHub: [dhanushkavinofficial](https://github.com/dhanushkavinofficial)
 - Medium: [@dhanushkavinofficial](https://medium.com/@dhanushkavinofficial)
-- Dev.to: [dhanush_kaving](https://dev.to/dhanush_kaving_f68718582)
+
